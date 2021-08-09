@@ -19,5 +19,7 @@ namespace ManagementCarApplication.Models
             base.Dispose(disposing);
         }
 
+        public DbSet<Carro> Carros { get; set; }
+
     }
 }
