@@ -61,10 +61,10 @@ namespace ManagementCarApplication.Controllers.Api
             db.SaveChanges();
         }
 
-        [Route("DetalhaCarro")]
-        public List<Carro> GetDetalhamento()
+        [Route("DetalhaCarro/{Id}")]
+        public Carro GetDetalhamento([FromUri] int Id)
         {
-            return db.Carros.ToList();
+            return db.Carros.Find(Id);
         }
 
         [Route("EditaCarro/{Id}")]

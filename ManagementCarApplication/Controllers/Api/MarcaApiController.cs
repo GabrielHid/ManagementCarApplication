@@ -45,6 +45,13 @@ namespace ManagementCarApplication.Controllers.Api
             }
         }
 
+        [Route("DetalhaMarca/{Id}")]
+        public Marca GetDetalhamento([FromUri] int Id)
+        {
+            return db.Marcas.Find(Id);
+        }
+
+
         [Route("EditaMarca/{Id}")]
         public void Put([FromUri] int Id, [FromBody] Marca marca)
         {
