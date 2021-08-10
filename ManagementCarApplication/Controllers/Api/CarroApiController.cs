@@ -56,7 +56,7 @@ namespace ManagementCarApplication.Controllers.Api
         [Route("CadastraCarro")]
         public void Post([FromBody] Carro carro)
         {
-            if (!ModelState.IsValid)
+            if (carro == null)
             {
                 return;
             }
@@ -77,11 +77,23 @@ namespace ManagementCarApplication.Controllers.Api
 
             if (id == carro.Id)
             {
-                db.Entry(carro).State = EntityState.Modified;
+                var objetoEdicao = db.Carros.Find(id);
+                if (objetoEdicao != null)
+                {   
+                    objetoEdicao.Nome = carro.Nome;
+                    objetoEdicao.KmPorGalao = carro.KmPorGalao;
+                    objetoEdicao.CavaloPotencia = carro.CavaloPotencia;
+                    objetoEdicao.Peso = carro.Peso;
+                    objetoEdicao.Acelerecao = carro.Acelerecao;
+                    objetoEdicao.Ano = carro.Ano;
+                    objetoEdicao.Origem = carro.Origem;
+                }
+                db.SaveChanges();
             }
-
-            db.SaveChanges();
-
+            else
+            {
+                return;
+            }
         }
 
         [Route("DeletaCarro/{Id}")]

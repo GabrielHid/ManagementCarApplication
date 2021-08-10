@@ -20,6 +20,7 @@ namespace ManagementCarApplication.Models
         }
 
         public DbSet<Carro> Carros { get; set; }
+        public DbSet<Marca> Marcas { get; set; }
 
     }
 }

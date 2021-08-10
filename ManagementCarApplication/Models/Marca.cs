@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace ManagementCarApplication.Models
 {
-    public class CarroDTO
+    public class Marca
     {
+
+        [Key]
+        public int Id { get; set; }
+
         public string Nome { get; set; }
         public string Origem { get; set; }
-        public DateTime Ano { get; set; }
 
     }
 }
