@@ -2,7 +2,7 @@
 
 Necessário criação do Schema ManagementCar no SQL Server para salvar dados no banco.
 
-#BreakPoints:
+#EndPoints:
 
 #Api de Carros:
 
