@@ -169,9 +169,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Context\ApplicationDbContext.cs" />
     <Compile Include="Models\Carro.cs" />
-    <Compile Include="Models\CarroDTO.cs" />
+    <Compile Include="Models\DTO\CarroDTO.cs" />
     <Compile Include="Models\Marca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
