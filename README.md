@@ -4,15 +4,17 @@ Necessário criação do Schema ManagementCar no SQL Server para salvar dados no
 
 #BreakPoints:
 
-Api de Carros:
+#Api de Carros:
 
 Listagem =>
+
         Get => api/CarroApi/GetCarros
             Filtros =>
                     Nome => api/CarroApi/GetCarroByNome?Nome=Example
                     Origem => api/CarroApi/GetCarroByOrigem?Origem=Example
 
 Cadastro =>
+
         Post => api/CarroApi/CadastraCarro 
                => Dados enviados no corpo da requisição.
                   => Ex: 
@@ -29,6 +31,7 @@ Cadastro =>
                         
                         
 Edição =>
+
        Put => api/CarroApi/EditaCarro/Id   
               => Dados enviados no corpo da requisição
                  Ex:
@@ -45,25 +48,29 @@ Edição =>
                     }
 
 Detalhamento =>
+
             Get => api/CarroApi/DetalhaCarro/Id
             
             
 Exclusão =>
+
          Delete => api/CarroApi/DeletaCarro/Id
 
 
 -------------------------------------------------------------------------------------------------------------------------------
 
 
-Api de Marcas:
+#Api de Marcas:
 
 Listagem =>
+
         Get => api/MarcaApi/GetMarcas
             Filtros =>
                     Nome => api/MarcaApi/GetMarcaByNome?Nome=Example
                     Origem => api/MarcaApi/GetMarcaByOrigem?Origem=Example
 
 Cadastro =>
+
         Post => api/MarcaApi/CadastraMarca 
                => Dados enviados no corpo da requisição.
                   => Ex: 
@@ -74,6 +81,7 @@ Cadastro =>
                         
                         
 Edição =>
+
        Put => api/MarcaApi/EditaMarca/Id   
               => Dados enviados no corpo da requisição
                  Ex:
@@ -84,10 +92,12 @@ Edição =>
                     }
 
 Detalhamento =>
+
             Get => api/MarcaApi/DetalhaMarca/Id
             
             
 Exclusão =>
+
          Delete => api/MarcaApi/DeletaMarca/Id
             
 
