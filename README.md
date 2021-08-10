@@ -2,9 +2,9 @@
 
 Necessário criação do Schema ManagementCar no SQL Server para salvar dados no banco.
 
-#EndPoints:
+# EndPoints:
 
-#Api de Carros:
+# Api de Carros:
 
 Listagem =>
 
@@ -60,7 +60,7 @@ Exclusão =>
 -------------------------------------------------------------------------------------------------------------------------------
 
 
-#Api de Marcas:
+# Api de Marcas:
 
 Listagem =>
 
